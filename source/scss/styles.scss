@@ -3,7 +3,7 @@
 body {
   margin: 0;
   background-color: $color1;
-  color: lighten($color1, 80%)
+  color: lighten($color1, 80%);
 }
 
 table.menu {
@@ -18,12 +18,15 @@ table.menu {
   background-color: lighten($color1, 27%);
   box-shadow: darken($color1, 20%) 0 0 15px;
   font-family: $serif-fonts;
+
   td {
     text-align: center;
+
     h1 {
       margin: 0 10px;
       font-size: 20px;
     }
+
     button {
       width: 80%;
       background-color: $color2;
@@ -35,25 +38,30 @@ table.menu {
       border: 1px solid lighten($color1, 13%);
       transition: width 0.5s, background-color 0.5s;
       border-radius: 3px;
+
       &:hover {
         cursor: pointer;
         background-color: lighten($color2, 3%);
         width: 85%;
         transition: width 0.5s, background-color 0.5s;
       }
-      &:active, &:focus {
-        outline: none
+
+      &:active,
+      &:focus {
+        outline: none;
       }
     }
   }
+
   td.label {
     width: 80px;
   }
-  td.label, td.result {
-    text-align: right
+
+  td.label,
+  td.result {
+    text-align: right;
   }
 }
-
 
 .clicky {
   position: absolute;
@@ -61,7 +69,8 @@ table.menu {
   background-color: darken($color2, 7%);
   border: 1px solid lighten($color1, 13%);
   box-shadow: darken($color1, 20%) 0 0 15px;
+
   &:hover {
-    cursor: pointer
+    cursor: pointer;
   }
 }
